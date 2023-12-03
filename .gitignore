@@ -49,5 +49,5 @@
 /Day25_1/x64/Debug
 /Day25_2/x64/Debug
 /.vs/AdventOfCode/v16
-/Day1_2/*.user
+*.user
 /x64/Debug
