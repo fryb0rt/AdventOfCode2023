@@ -12,13 +12,6 @@ int main()
 	while (std::getline(stream, line)) {
 		input.push_back(line);
 	}
-	const auto check = [&input](int x, int y) {
-		const auto checkOneSymbol = [&input](int xx, int yy) {
-			return yy >= 0 && yy < input.size() && xx >= 0 && xx < input[yy].size() && input[yy][xx] != '.' && !(input[yy][xx] >= '0' && input[yy][xx] <= '9');
-		};
-		return checkOneSymbol(x + 1, y) || checkOneSymbol(x + 1, y + 1) || checkOneSymbol(x, y + 1) || checkOneSymbol(x - 1, y + 1) || checkOneSymbol(x - 1, y)
-			|| checkOneSymbol(x - 1, y - 1) || checkOneSymbol(x, y - 1) || checkOneSymbol(x + 1, y - 1);
-	};
 	struct Data {
 		int count = 0;
 		int product = 1;
