@@ -51,3 +51,5 @@
 /.vs/AdventOfCode/v16
 *.user
 /x64/Debug
+/Day8_2/x64/Release
+/x64/Release
